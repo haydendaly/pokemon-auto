@@ -24,7 +24,7 @@ for name in sorted(image_dict.keys()):  # sort the keys before iterating
     name_capitalized = " ".join([word.capitalize()
                                 for word in name.split("_")])
     images_md = ''.join(
-        [f'<img src="./images/{image}" width="300" alt="{name_capitalized}"><br>' for image in images])
+        [f'<img src="https://raw.githubusercontent.com/haydendaly/pokemon-auto/main/images/{image}" width="300" alt="{name_capitalized}"><br>' for image in images])
 
     # Read metadata from JSON file
     metadata_file = f"{metadata_dir}/{name}.json"
