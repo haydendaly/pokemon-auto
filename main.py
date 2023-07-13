@@ -32,7 +32,7 @@ for name in names:
     name_capitalized = " ".join([word.capitalize()
                                 for word in name.split("_")])
     images_md = ''.join(
-        [f'<img src="https://cdn.statically.io/gh/haydendaly/pokemon-auto/images/{image}" width="400" alt="{name_capitalized}"><br>' for image in images])
+        [f'<img src="https://cdn.statically.io/gh/haydendaly/pokemon-auto@main/images/{image}" width="400" alt="{name_capitalized}"><br>' for image in images])
 
     metadata_file = f"{metadata_dir}/{name}.json"
 
